@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import App from "src/app/App";
-import { setupStore } from "src/store/store";
-import ThemeProvider from "./theme/ThemeProvider";
+import { setupStore } from "src/shared/store/store";
+import { ThemeProvider } from "./app/providers";
 
 const store = setupStore();
 ReactDOM.createRoot(document.getElementById("root")!).render(

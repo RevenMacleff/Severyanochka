@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { IProduct } from "src/models/IProduct";
+import { IProduct } from "src/shared/models/IProduct";
 import classes from "./Product.module.scss";
 interface ProductItemProps {
   product: IProduct;

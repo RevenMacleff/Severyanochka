@@ -2,12 +2,12 @@ import "./index.scss";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Routing } from "src/pages";
-import { productAPI } from "src/services/ProductService";
-import { useAppDispatch, useAppSelector } from "src/hooks/redux";
-import { setProducts } from "src/store/ProductSlice";
-import ProductItem from "src/app/Product/Product";
-import "./styles/index.scss";
-import { useTheme } from "src/theme/useTheme";
+import ProductItem from "./Product/Product";
+import { classNames } from "src/shared/lib/classNames/classNames";
+import { useAppDispatch, useAppSelector } from "src/shared/hooks/redux";
+import { setProducts } from "src/shared/store/ProductSlice";
+import { useTheme } from "./providers";
+import { productAPI } from "src/shared/services/ProductService";
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
@@ -22,7 +22,7 @@ const App = () => {
   const food = useAppSelector((state) => state.product.products);
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames("app", {}, [theme])}>
       <button onClick={toggleTheme}>Изменение темы</button>
       <Link to={"/"}>главная</Link>
       <Link to={"/about"}>О сайте</Link>
