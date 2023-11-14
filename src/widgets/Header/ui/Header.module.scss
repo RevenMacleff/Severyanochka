@@ -1,0 +1,25 @@
+.header {
+  height: 72px;
+  background: #fff;
+}
+
+.logo {
+  display: flex;
+  margin-right: clamp(20px, 3vw, 40px);
+}
+.content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.menu {
+  margin-right: 8px;
+}
+
+.button_text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--main-on-secondary);
+  font: var(--font-s);
+}

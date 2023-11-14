@@ -3,12 +3,10 @@ import { IProduct } from "src/shared/models/IProduct";
 
 export const productAPI = createApi({
   reducerPath: "userAPI",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://ebede7be76cd09ec.mokky.dev/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://ebede7be76cd09ec.mokky.dev/severyanochka" }),
   endpoints: (builder) => ({
-    fetchAllPosts: builder.query<IProduct[], void>({
-      query: () => ({
-        url: "/severyanochka",
-      }),
+    fetchFilteredProducts: builder.query<IProduct[], void | string>({
+      query: (category) => `${category || ""}`,
     }),
   }),
 });

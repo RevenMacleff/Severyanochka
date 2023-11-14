@@ -5,15 +5,15 @@ interface ProductItemProps {
   product: IProduct;
 }
 
-const ProductItem: FC<ProductItemProps> = ({ product }) => {
+const Product: FC<ProductItemProps> = ({ product }) => {
   return (
     <div className={classes.product}>
-      {product.id}
-      {product.name}
-      {product.descr} {product.price}
+      ({product.id})<p> {product.name}</p>
+      <p> {product.descr}</p> <p>{product.price} руб</p>
       <img className={classes.img} src={product.photo} alt="photo" />
-      <button>Delete</button>
+      {product.weight} грамм
+      <button>купить</button>
     </div>
   );
 };
-export default ProductItem;
+export default Product;

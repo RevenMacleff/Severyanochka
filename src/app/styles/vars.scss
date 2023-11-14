@@ -1,12 +1,65 @@
 :root {
-  --font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+  --font-family-main: "Rubik", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --font-size-m: 16px; /* medium */
-  --font-line-m: 24px; /* medium высота линии */
-  --font-m: var(--font-size-m) / var(--font-line-m) / var(--font-family-main);
-  --font-size-l: 24px; /* large */
-  --font-line-l: 32px; /* large высота линии */
-  --font-l: var(--font-size-l) / var(--font-line-l) / var(--font-family-main);
-  --color-dark: #242424;
-  --color-primary: #108ee9;
+  /* ТИПОГРАФИЯ */
+  /* FONTS */
+  /*   --font-xs: 400 12px/24px var(--font-family-main); */
+  --font-xs: 400 12px var(--font-family-main);
+  --font-s: 400 16px var(--font-family-main);
+  --font-m: 400 18px var(--font-family-main);
+  --font-l: 400 24px var(--font-family-main);
+  --font-xl: 400 36px var(--font-family-main);
+  /* BOLD */
+  --font-xs-b: 700 12px var(--font-family-main);
+  --font-s-b: 700 16px var(--font-family-main);
+  --font-m-b: 700 18px var(--font-family-main);
+  --font-l-b: 700 24px var(--font-family-main);
+  --font-xl-b: 700 36px var(--font-family-main);
+  /* HEADER */
+  --font-xs-h: 700 18px var(--font-family-main);
+  --font-s-h: 700 24px var(--font-family-main);
+  --font-m-h: 700 36px var(--font-family-main);
+  --font-l-h: 700 48px var(--font-family-main);
+  --font-xl-h: 700 64px var(--font-family-main);
+  /* MAIN COLOR */
+  --main-background: #56562d;
+  --main-on-background: #291e0f;
+  --main-surface: #fff;
+  --main-on-surface: #414141;
+  --main-primary: #f63;
+  --main-on-primary: #fff;
+  --main-secondary: #70c05b;
+  --main-on-secondary: #fff;
+  /* Grayscale */
+  --grayscale-lightes: #f3f2f1;
+  --grayscale-ligh: #bfbfbf;
+  --grayscale-hard: #8f8f8f;
+  --grayscale-hardest: #606060;
+  /* Pallete */
+  --pallete-success: #008c49;
+  --pallete-info: #1cb9fc;
+  --pallete-warning: #fca21c;
+  --pallete-error: #d80000;
+}
+@media screen and (max-width: 768px) {
+  ::root {
+    /* FONTS */
+    --font-xs: 400 8px var(--font-family-main);
+    --font-s: 400 12px var(--font-family-main);
+    --font-m: 400 14px var(--font-family-main);
+    --font-l: 400 20px var(--font-family-main);
+    --font-xl: 400 32px var(--font-family-main);
+    /* BOLD */
+    --font-xs-b: 700 8px var(--font-family-main);
+    --font-s-b: 700 12px var(--font-family-main);
+    --font-m-b: 700 14px var(--font-family-main);
+    --font-l-b: 700 20px var(--font-family-main);
+    --font-xl-b: 700 32px var(--font-family-main);
+    /* HEADER */
+    --font-xs-h: 700 14px var(--font-family-main);
+    --font-s-h: 700 20px var(--font-family-main);
+    --font-m-h: 700 24px var(--font-family-main);
+    --font-l-h: 700 36px var(--font-family-main);
+    --font-xl-h: 700 48px var(--font-family-main);
+  }
 }
